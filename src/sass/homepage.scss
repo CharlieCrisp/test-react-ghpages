@@ -1,0 +1,97 @@
+
+.top-item {
+    padding:50px 0px 50px 0px;
+    background: url("../img/Woodland_Venture_Fire_Pit.jpg");
+    background-size: cover;
+    background-position: 15%;
+    -moz-background-size: cover;
+}
+
+.warning_container {
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.quote_row {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo_panel {
+    max-width: 100% ;
+    text-align: center;
+}
+
+.panel {
+    max-width: 400px;
+    margin: 20px 20px 20px 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.project-picture-col {
+    background: url("../img/projects/Forest_School_Woodland_Sanctuary_After.JPG") no-repeat center top scroll;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.picture-col {
+    max-width: 800px;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
+
+.group-picture-col {
+    background: url("../img/Woodland_Venture_Family_Kettle.jpg") no-repeat center top scroll;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.panel-borderless {
+  border: 0;
+  box-shadow: none;
+}
+
+.corp-picture-col {
+    background: url("../img/Woodland_Venture_Bucket_Activity.jpg") no-repeat center top scroll;
+    background-position: 7%;
+    background-size: cover;
+    height: 100%;
+}
+
+.large-h1 {
+    font-size: 50px;
+    margin-top: 8px;
+}
+
+.sch1-picture-col {
+    background: url("../img/Woodland_Venture_Child_Rope_Activity.jpg") no-repeat center top scroll;
+    background-position: 25%;
+    background-size: cover;
+    height: 100%;
+}
+
+.sch2-picture-col {
+    background: url("../img/Woodland_Venture_Children_Play_Tree.jpg") no-repeat center top scroll;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+#image-row-1 {
+    height: 500px;
+    background: url("../img/Woodland_Venture_Fire_Lighting_Activity.jpg");
+    background-size: cover;
+    background-position: 40%;
+    -moz-background-size: cover;
+}

@@ -1,0 +1,35 @@
+iframe {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.find-top-item {
+    $breakpoint-tablet: 768px;
+    @media (min-width: $breakpoint-tablet) {
+        margin-top: 220px;
+    }
+    @media (max-width: $breakpoint-tablet) {
+        margin-top: 350px;
+    }
+}
+
+.find-top-item-no-warning {
+    $breakpoint-tablet: 768px;
+    @media (min-width: $breakpoint-tablet) {
+        margin-top: 180px;
+    }
+    @media (max-width: $breakpoint-tablet) {
+        margin-top: 310px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact {
+        padding-top: 20px;
+    }
+}

@@ -3,11 +3,11 @@ import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 import logo from "../img/logo.png";
 
 const navbarNoBanner = () => {
-
+    const url = process.env.PUBLIC_URL;
     return (
         <Navbar bg="light" expand="lg">
             <Container>
-                <Navbar.Brand href="#home">
+                <Navbar.Brand href={url}>
                     <img alt="Woodland Venture Logo" className="d-inline-block align-top" src={logo} />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -20,12 +20,12 @@ const navbarNoBanner = () => {
                         <NavDropdown.Item href="#groups">Groups</NavDropdown.Item>
                     </NavDropdown>
                     <NavDropdown title="Projects" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="/projects">All projects</NavDropdown.Item>
-                        <NavDropdown.Item href="/projects/shelter">Shelter project</NavDropdown.Item>
-                        <NavDropdown.Item href="/projects/sanctuary">The Sanctuary</NavDropdown.Item>
+                        <NavDropdown.Item href={`${url}/projects`}>All projects</NavDropdown.Item>
+                        <NavDropdown.Item href={`${url}/projects/shelter`}>Shelter project</NavDropdown.Item>
+                        <NavDropdown.Item href={`${url}/projects/sanctuary`}>The Sanctuary</NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link href="/contact">Contact</Nav.Link>
-                    <Nav.Link href="/about">About</Nav.Link>
+                    <Nav.Link href={`${url}/contact`}>Contact</Nav.Link>
+                    <Nav.Link href={`${url}/about`}>About</Nav.Link>
                 </Nav>
                 </Navbar.Collapse>
                 <Navbar.Collapse className="justify-content-end">

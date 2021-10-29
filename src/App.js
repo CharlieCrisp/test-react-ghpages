@@ -1,10 +1,13 @@
 import NavbarNoBanner from "./existing_html/NavbarNoBanner";
 import HomePage from "./existing_html/HomePage";
 import Footer from "./existing_html/Footer";
+import About from "./existing_html/About";
+import Contact from "./existing_html/Contact";
 import { useState, useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './sass/styles.scss';
 
+import { log } from "util";
 import {
   BrowserRouter as Router,
   Switch,
@@ -55,25 +58,23 @@ function App() {
 
 
   return (
-    <Router>
-      <Switch>
-        <Route path="/">
-          <div>
-            {
-              isFontLoaded 
-              && isJQueryLoaded 
-              && (
-                <div>
-                  <NavbarNoBanner /> 
-                  <HomePage />
-                  <Footer />
-                </div>
-              )
-            }
-          </div>
-        </Route>
-      </Switch>
-    </Router>
+    <div>
+      {
+        isFontLoaded 
+        && isJQueryLoaded 
+        && (
+          <Router>
+            <NavbarNoBanner />
+            <Switch>
+              <Route path={`${process.env.PUBLIC_URL}/about`}><About /></Route>
+              <Route path={`${process.env.PUBLIC_URL}/contact`}><Contact /></Route>
+              <Route path="/"><HomePage /></Route>
+            </Switch>
+            <Footer />
+          </Router>
+        )
+      }
+    </div>
   )
 
 }

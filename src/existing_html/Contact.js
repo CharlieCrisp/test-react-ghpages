@@ -15,7 +15,7 @@ const Contact = () => {
                         which is part of the <a href="http://www.chilstone.com/">Chilstone</a> site.
                         <br /><br />
                         Victoria Park Fordcombe Lodge,<br />Fordcombe Road,<br />Langton Green,
-                        <br />Tunbr /idge Wells Kent<br />TN3 0RD<br /><br />
+                        <br />Tunbridge Wells Kent<br />TN3 0RD<br /><br />
                         For all enquiries, please email <a href="mailto:info@woodlandventure.co.uk">info@woodlandventure.co.uk</a>.<br /><br />
                         Mobile: <a href="tel:+447767827390">07767827390</a><br /><br />
                         (Please be aware, we will not be able to take calls during sessions)

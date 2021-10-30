@@ -1,11 +1,15 @@
 import React from "react";
 import before from "../img/projects/Forest_School_Woodland_Sanctuary_Before.JPG";
 import after from "../img/projects/Forest_School_Woodland_Sanctuary_After.JPG";
+import { useImagePopup } from "../projectLinkwrapper";
 
 
 const Sanctuary = () => {
+    const [modal, setClickedImage] = useImagePopup();
+
     return (
         <div>
+            {modal}
             <div className="videoWrapper">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/s_ZwSEIkf3A" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
@@ -29,11 +33,11 @@ const Sanctuary = () => {
                 <div className="panel-container">
                 <div className="product-panel">
                     <h3>Before</h3>
-                    <img id="shelter" src={before} className="panel-image"></img>
+                    <img id="shelter" src={before} className="panel-image" onClick={() => setClickedImage(before)}></img>
                 </div>
                 <div className="product-panel">
                     <h3>After</h3>
-                    <img id="shelter" src={after} className="panel-image"></img>
+                    <img id="shelter" src={after} className="panel-image" onClick={() => setClickedImage(after)}></img>
                 </div>
             </div>
         </div>

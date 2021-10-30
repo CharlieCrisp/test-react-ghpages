@@ -3,11 +3,14 @@ import before from "../img/projects/Forest_School_Woodland_Playground_Before_Sma
 import after1 from "../img/projects/Forest_School_Woodland_Playground_After_Small.JPG";
 import after2 from "../img/projects/Forest_School_Woodland_Playground_After_Small_2.JPG";
 import after3 from "../img/projects/Forest_School_Woodland_Playground_After_Small_3.JPG";
+import { useImagePopup } from "../projectLinkwrapper";
 
 const Shelter = () => {
-    // TODO: Enlarge images
+    const [modal, setClickedImage] = useImagePopup();
+
     return (
         <div>
+            {modal}
             <div className="container-fluid shelter-hero-container"></div>
             <div className="description-container">
                 <div className="quote-title">Shelter Project</div><br />
@@ -20,19 +23,19 @@ const Shelter = () => {
             <div className="panel-container">
                 <div className="product-panel">
                     <h3>Before</h3>
-                    <img id="shelter" src={before} className="panel-image"></img>
+                    <img id="shelter" src={before} className="panel-image" onClick={() => setClickedImage(before)}></img>
                 </div>
                 <div className="product-panel">
                     <h3>Bespoke Outdoor Shelter - 1</h3>
-                    <img id="shelter" src={after1} className="panel-image"></img>
+                    <img id="shelter" src={after1} className="panel-image" onClick={() => setClickedImage(after1)}></img>
                 </div>
                 <div className="product-panel">
                     <h3>Bespoke Outdoor Shelter - 2</h3>
-                    <img id="shelter" src={after2} className="panel-image"></img>
+                    <img id="shelter" src={after2} className="panel-image" onClick={() => setClickedImage(after2)}></img>
                 </div>
                 <div className="product-panel">
                     <h3>Bespoke Outdoor Shelter - 3</h3>
-                    <img id="shelter" src={after3} className="panel-image"></img>
+                    <img id="shelter" src={after3} className="panel-image" onClick={() => setClickedImage(after3)}></img>
                 </div>
             </div>
         </div>

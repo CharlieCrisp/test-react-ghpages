@@ -7,8 +7,8 @@ const navbarNoBanner = () => {
     return (
         <Navbar bg="light" expand="lg">
             <Container>
-                <Navbar.Brand href={url}>
-                    <img alt="Woodland Venture Logo" className="d-inline-block align-top" src={logo} />
+                <Navbar.Brand href={url} style={{display: "flex", "justify-content": "center", padding: "5px 0px"}}>
+                    <img alt="Woodland Venture Logo" className="d-inline-block align-top" src={logo} height="70px" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">

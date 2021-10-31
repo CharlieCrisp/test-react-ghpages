@@ -29,13 +29,12 @@ const getImage = (imageSrc) => (
     <img
       src={imageSrc}
       alt={imageSrc}
-      style={{height: "60vh"}}
+      style={{marginTop: "20px", maxHeight: "60vh", maxWidth: "90vw"}}
     />
   </div>
 )
 
 const getImages = (imageSrcs) => {
-  console.log(imageSrcs.length)
   if (imageSrcs.length > 1) {
     return (
       <Carousel>

@@ -75,6 +75,6 @@ export const projectDetails = {
     price: "£300",
     shortDescription: "Short description",
     longDescription: "Longer description of the project. Here's some info. And here is some more. Let's fill this section out some more.",
-    title: "FireCircle",
+    title: "Fire Circle",
   }
 }

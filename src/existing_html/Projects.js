@@ -99,7 +99,7 @@ const Projects = () => {
                 <img src={bench} className="panel-image"></img>
                 </div>
                 <div className="product-panel" onClick={() => setClickedImage(bootRack)}>
-                <h3>className Boot Storage</h3>
+                <h3>Boot Storage</h3>
                 <img src={bootRack} className="panel-image"></img>
                 </div>
                 <div className="product-panel" onClick={() => setClickedImage(sinkAgain)}>

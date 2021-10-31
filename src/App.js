@@ -5,6 +5,8 @@ import About from "./existing_html/About";
 import Contact from "./existing_html/Contact";
 import Sanctuary from "./existing_html/Sanctuary";
 import Projects from "./existing_html/Projects";
+import ProjectPage from "./jsx/ProjectPage";
+import ProjectGallery from "./jsx/ProjectGallery";
 import Shelter from "./existing_html/Shelter";
 import { useState, useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -73,6 +75,8 @@ function App() {
               <Route path={`${process.env.PUBLIC_URL}/contact`}><Contact /></Route>
               <Route path={`${process.env.PUBLIC_URL}/projects/shelter`}><Shelter /></Route>
               <Route path={`${process.env.PUBLIC_URL}/projects/sanctuary`}><Sanctuary /></Route>
+              <Route path={`${process.env.PUBLIC_URL}/projectgallery/:projectName`} component={ProjectPage} />
+              <Route path={`${process.env.PUBLIC_URL}/projectgallery`} component={ProjectGallery} />
               <Route path={`${process.env.PUBLIC_URL}/projects`}><Projects /></Route>
               <Route path="/"><HomePage /></Route>
             </Switch>

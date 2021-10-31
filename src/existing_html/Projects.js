@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import beforeAndAfter from "../img/projects/Forest_School_Woodland_BeforeAndAfter.JPG";
 import parachute from "../img/projects/Forest_School_Woodland_Parachute.JPG";
 import workTop from "../img/projects/Forest_School_Woodland_Work_Top.JPG";
@@ -15,7 +15,7 @@ import bench from "../img/projects/Forest_School_Woodland_Bench.JPG";
 import bootRack from "../img/projects/Forest_School_Woodland_Boot_Rack.jpg";
 import sinkAgain from "../img/projects/Forest_School_Woodland_Kitchen_Sink.jpg";
 import sandpitCoverOn from "../img/projects/Forest_School_Woodland_Sandpit_Cover_On.jpg";
-import { useImagePopup, wrapWithLinkIfNeeded } from "../projectLinkwrapper";
+import { useImagePopup } from "../projectLinkwrapper";
 
 
 
